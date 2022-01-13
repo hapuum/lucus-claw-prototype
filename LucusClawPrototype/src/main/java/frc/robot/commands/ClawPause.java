@@ -22,6 +22,7 @@ public class ClawPause extends CommandBase {
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
+  // ! is for compensating for NO/NC 
   public void execute() {
     if (!c.getLimitSwitchControl()) {
       if (c.getLimitSwitchInClaw()) {
